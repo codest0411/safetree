@@ -1,0 +1,6 @@
+node_modules/
+types/
+coverage/
+*.tgz
+.DS_Store
+Thumbs.db

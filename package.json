@@ -1,0 +1,54 @@
+{
+  "name": "safetree",
+  "version": "0.1.0",
+  "description": "Read-only Git tree and symlink security and Windows compatibility auditor",
+  "type": "module",
+  "bin": {
+    "safetree": "./bin/safetree.js"
+  },
+  "main": "./src/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "types/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "SECURITY.md"
+  ],
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "keywords": [
+    "git",
+    "symlink",
+    "security",
+    "windows",
+    "tree",
+    "audit",
+    "sarif",
+    "cli"
+  ],
+  "author": "safetree contributors",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "build:types": "tsc --emitDeclarationOnly",
+    "test": "node --test test/unit/*.test.js test/e2e/*.test.js",
+    "test:coverage": "node --test --experimental-test-coverage --test-coverage-lines=90 test/unit/*.test.js test/e2e/*.test.js",
+    "prepack": "npm run build:types"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
+    "typescript": "^5.9.3"
+  }
+}
