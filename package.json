@@ -50,5 +50,13 @@
     "@eslint/js": "^9.39.1",
     "eslint": "^9.39.1",
     "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codest0411/safetree.git"
+  },
+  "homepage": "https://github.com/codest0411/safetree#readme",
+  "bugs": {
+    "url": "https://github.com/codest0411/safetree/issues"
   }
 }
