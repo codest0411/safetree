@@ -47,7 +47,7 @@
     "prepack": "npm run build:types"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.1",
+    "@eslint/js": "^10.0.1",
     "eslint": "^9.39.1",
     "typescript": "^5.9.3"
   },
